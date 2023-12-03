@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>368769488477-5uddsn10j4fkvj3sca5dlplvblnor529.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.368769488477-5uddsn10j4fkvj3sca5dlplvblnor529</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDON602CYEXhiNxglERamuDC9jY3VdRmO4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>368769488477</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.chat.app</string>
+	<key>PROJECT_ID</key>
+	<string>simon-jang-chat</string>
+	<key>STORAGE_BUCKET</key>
+	<string>simon-jang-chat.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:368769488477:ios:cad18e7c2c3e9c26019fb4</string>
+	<key>DATABASE_URL</key>
+	<string>https://simon-jang-chat.firebaseio.com</string>
+</dict>
+</plist>

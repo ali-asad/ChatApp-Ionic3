@@ -1,1 +1,2 @@
-# ChatApp-Ionic3
+# 
+Realtime Chat app with firebase.

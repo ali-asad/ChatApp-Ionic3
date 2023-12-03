@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "368769488477",
+    "firebase_url": "https://simon-jang-chat.firebaseio.com",
+    "project_id": "simon-jang-chat",
+    "storage_bucket": "simon-jang-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368769488477:android:944e930e01852dc7019fb4",
+        "android_client_info": {
+          "package_name": "com.chat.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368769488477-bpjvcr41ud4phtnrl2f2uck22dmvdunn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL5d1dqJ80X32uFKRmHOWWlOIuIfNWOQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368769488477-bpjvcr41ud4phtnrl2f2uck22dmvdunn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
