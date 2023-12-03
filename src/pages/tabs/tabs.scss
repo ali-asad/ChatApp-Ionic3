@@ -1,0 +1,55 @@
+page-tabs{
+    .tab-button-icon{
+        height: 30px !important;
+        width: 30px !important;
+        color: grey !important;
+    }   
+    .tabs-ios .tab-button ion-icon, .tabbar .tab-button ion-icon{
+        margin: 0 auto 0px !important;
+    }
+    .tabs-ios .tab-button-text{
+        text-transform: none;
+    }
+    .tabs-ios .tab-button[aria-selected=true] .tab-button-icon{
+        color: #36BBB5 !important;
+    }
+    .fa-icons-general {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transform: translate(0, 0);
+    }   
+    .ion-ios-fa-home::before,
+    .ion-ios-fa-home-outline::before,
+    .ion-md-fa-home::before {
+        @extend .fa-icons-general;
+        content: "\f015";
+    }    
+    .ion-ios-fa-bell::before,
+    .ion-ios-fa-bell-outline::before,
+    .ion-md-fa-bell::before {
+        @extend .fa-icons-general;
+        content:"\f0f3";
+    }
+    .ion-ios-fa-plus-square::before,
+    .ion-ios-fa-plus-square-outline::before,
+    .ion-md-fa-plus-square::before {
+        @extend .fa-icons-general;
+        content:"\f0fe";
+    }
+    .ion-ios-fa-comments::before,
+    .ion-ios-fa-comments-outline::before,
+    .ion-md-fa-comments::before {
+        @extend .fa-icons-general;
+        content:"\f086";
+    }
+    .ion-ios-fa-user-circle::before,
+    .ion-ios-fa-user-circle-outline::before,
+    .ion-md-fa-user-circle::before {
+        @extend .fa-icons-general;
+        content:"\f2bd";
+    }
+}

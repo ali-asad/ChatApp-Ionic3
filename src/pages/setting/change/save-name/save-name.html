@@ -1,0 +1,11 @@
+<ion-header class="bar-gradient">
+    <ion-navbar color="gradient">
+      <ion-title>User Name</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding>    
+  <ion-input type="text" name="username" [(ngModel)]="this.first_name" required placeholder="First name"></ion-input>
+  <ion-input type="text" name="username" [(ngModel)]="this.last_name" required placeholder="Last name"></ion-input>
+  <button ion-button (click)='changeName()' class="btn">Save</button>
+</ion-content>

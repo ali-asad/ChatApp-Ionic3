@@ -1,0 +1,131 @@
+page-chats {
+  .bar-button-menutoggle-ios{
+    display: inline !important;
+    color: white;
+  }
+  .searchbar{
+    margin-top: 10px;  
+  }
+  .delete{
+    float: right;
+    background-color: transparent;
+  }
+  
+  .toolbar-title-ios,
+  .toolbar-title-md {
+    color:#FFF;
+  }
+  ion-navbar.toolbar{
+    height: 20px;
+  }
+  .segment-md, .segment-ios {
+    background: #80CBC4;
+    .segment-button {
+      color:#FFF;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-bottom-color: transparent;
+
+      &.segment-activated {
+        border-bottom: solid 2px #FFF;
+      }
+    }
+  }
+
+  ion-thumbnail {
+    position: relative;
+    img {
+      border-radius:40px;
+      overflow: hidden;
+      position: relative;
+      z-index:1;
+    }
+
+    em {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border-radius: 8px;
+      border: solid 3px #FFF;
+      background:#727272;
+      bottom: -3px;
+      right: 3px;
+      z-index: 2;
+
+      &.online {
+        background:#21c055;
+      }
+    }
+  }
+  ion-item.item {
+    border-bottom: solid 1px #f1f1f1 !important;
+    border-top: none;
+    background:#fbfbfb;
+
+    &.item-unread {
+      background:#FFF;
+    }
+
+    .item-inner {
+      border: none !important;
+    }
+
+    ion-label {
+      margin-top: 25px;
+      margin-bottom: 20px;
+      text-transform: none;
+      letter-spacing: 0;
+
+      h1 {
+        font-family: 'montserrat-light';
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0;
+        color: #393939;
+        text-transform: none;
+        letter-spacing: 0;
+      }
+      h2 {
+        font-size: 14px;
+        font-weight: 400;
+        color: #80CBC4;
+        text-transform: none;
+        letter-spacing: 0;
+        margin:3px 0 8px;
+      }
+      p {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 14px;
+        color: #727272;
+        font-family: 'montserrat-light';
+        margin: 0;
+      }
+    }
+
+    .badge:not(.time) {
+      background:#80CBC4;
+      width: 25px;
+      height: 25px;
+      border-radius: 15px;
+      line-height: 19px;
+      font-size:12px;
+
+    }
+
+    .badge.time {
+      background: none;
+      color:#aeaeae;
+      font-size:12px;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 25px;
+      right: 15px;
+      font-weight: 400;
+    }
+  }
+
+}

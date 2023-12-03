@@ -1,0 +1,33 @@
+page-setting {
+    .toolbar-title-ios, .toolbar-title-md {
+        color:#FFF;
+    }
+    .circle{
+        font-size: 20px;
+        color: gray;
+    }
+    .list-ios{
+        margin-top: 0px;
+    }
+    img{
+        border-radius: 50%;
+    }
+    ion-label{
+        text-transform: none;
+    }
+    .set{
+        color: black;
+        text-transform: none;
+        font-size: 15px;
+    }
+    ion-label{
+        &[width-25] {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+        &[width-75] {
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+    }
+}

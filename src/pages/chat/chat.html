@@ -1,0 +1,69 @@
+<ion-header class="bar-gradient">
+  <ion-navbar color="gradient"> 
+    <ion-title>Chatroom</ion-title>
+    <button ion-button item-right class="toggle-dropdown" (click)="presentPopover($event)">
+      <ion-icon name="ios-more" style="font-size: 2.0em;"></ion-icon>
+    </button>
+  </ion-navbar>
+
+  <ion-item class="product-item">
+    <ion-thumbnail item-left>
+      <img src="{{this.chatUserPhoto}}" />
+      <em class="online"></em>
+    </ion-thumbnail>
+    <h2>{{chatUser.displayName}}</h2>
+    <ion-buttons end>     
+      <button ion-button icon-only class="chat_user">
+        <ion-thumbnail>
+          <img src="{{this.appUserPhoto}}" />
+          <em class="online"></em>
+        </ion-thumbnail>
+      </button>
+      <span id="user_name">{{this.appUserName}}</span>
+    </ion-buttons>  
+  </ion-item>
+</ion-header>
+
+<ion-content>
+  <ion-list class="chat-list">
+    <ion-list-header>
+      <ion-icon name="md-time"></ion-icon> {{this.currentTime}}
+    </ion-list-header>
+    <div *ngFor="let message of messagesToShow; let i=index;">
+      <ion-item class="message-received" *ngIf="message.sender != this.appUserId">
+        <ion-thumbnail item-left *ngIf="message.src">
+          <img src="{{message.src}}" />
+        </ion-thumbnail>
+        <p>{{message.message}}</p>
+      </ion-item>
+      <ion-item class="message-sent" *ngIf="message.sender == this.appUserId">
+        <ion-thumbnail item-right *ngIf="message.src">
+          <img src="{{message.src}}"/>
+          <em class="online"></em>
+        </ion-thumbnail>  
+        <p>{{message.message}}</p>
+      </ion-item>
+    </div>
+  </ion-list>  
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="auto-message" >
+    <button ion-button *ngFor="let cat of category" (click)="autoMessage(cat);">{{cat}}</button> 
+  </ion-toolbar>
+
+  <ion-toolbar class="message-form">
+    <ion-buttons start (click)="attach();">
+      <button ion-button clear>
+        <i class="chat-icon attach-icon"></i>
+      </button>
+    </ion-buttons>
+    <ion-textarea id="textarea" #chatMessage placeholder="Type your message" [(ngModel)]="this.message" (ionFocus)="scrollBottom()" (keyup.enter)="sendMessage();" (click)="scrollBottom()" autofocus></ion-textarea>
+    <ion-buttons end>
+      <button ion-button clear (click)="sendMessage();">
+        <i class="chat-icon send-icon"></i>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+

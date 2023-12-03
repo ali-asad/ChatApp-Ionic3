@@ -1,0 +1,100 @@
+<ion-header class="bar-gradient">
+  <ion-navbar color="gradient">
+    <ion-title>Jonathan Parle</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <i class="header-icon star-icon"></i>
+      </button>
+      <button ion-button icon-only>
+        <ion-thumbnail>
+          <img src="assets/images/user-tn.jpg" />
+          <em class="online"></em>
+        </ion-thumbnail>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-item class="product-item">
+    <ion-thumbnail item-left>
+      <img src="assets/images/discover-img.jpg" />
+    </ion-thumbnail>
+    <h2>Macbook Pro</h2>
+    <h3>$ 556</h3>
+    <button ion-button icon-only item-right clear>
+      <ion-icon name="ios-arrow-forward"></ion-icon>
+    </button>
+    <button ion-button icon-only item-right clear class="toggle-dropdown" (click)="presentPopover($event)">
+      <ion-icon name="ios-more"></ion-icon>
+    </button>
+  </ion-item>
+</ion-header>
+
+<ion-content style="background-image: url('assets/images/discover-img.jpg')">
+
+
+  <ion-list class="chat-list">
+    <ion-list-header>
+      <ion-icon name="md-time"></ion-icon> 15:46
+    </ion-list-header>
+    <ion-item class="message-sent">
+      <ion-thumbnail item-right>
+        <img src="assets/images/user-tn2.jpg" />
+      </ion-thumbnail>
+
+      <p>As per the company rules is warranty available ?</p>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/images/user-tn.jpg" />
+        <em class="online"></em>
+      </ion-thumbnail>
+
+      <p>
+        <img src="assets/images/discover-img.jpg" />
+      </p>
+    </ion-item>
+
+    <ion-item class="message-sent">
+      <ion-thumbnail item-right>
+        <img src="assets/images/user-tn2.jpg" />
+      </ion-thumbnail>
+
+      <p>Okey so what is the final cost of this prduct to sell today?</p>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/images/user-tn.jpg" />
+        <em class="online"></em>
+      </ion-thumbnail>
+
+      <p>Alright I will deliver it to your place with cost of 12$. I hope the cost is fine with you. </p>
+      <p>Thank you!</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="auto-message">
+    <button ion-button>I am interested</button>
+    <button ion-button>Is it Available</button>
+    <button ion-button>Price Negotiable</button>
+  </ion-toolbar>
+
+  <ion-toolbar class="message-form">
+    <ion-buttons start>
+      <button ion-button clear>
+        <i class="chat-icon attach-icon"></i>
+      </button>
+    </ion-buttons>
+
+    <ion-input  placeholder="Write..."></ion-input>
+
+    <ion-buttons end>
+      <button ion-button clear>
+        <i class="chat-icon send-icon"></i>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+

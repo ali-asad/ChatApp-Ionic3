@@ -1,0 +1,176 @@
+page-register {
+  .login-content {
+    overflow-x: hidden;
+    .register-top {
+      color: #FFF;
+      height: 205px;
+      position: relative;
+      z-index:1;
+      text-align:center;
+      padding-top:10px;
+
+      .bg {
+        background-color: #1e5799;
+        background: -webkit-linear-gradient(45deg, #80CBC4 0%,#80CBC4 100%);
+        background: linear-gradient(45deg, #80CBC4 0%,#80CBC4 100%);
+        box-shadow: 0 5px 15px rgba(255, 24, 90, .3);
+        position: absolute;
+        bottom:20px;
+        right:-20px;
+        width: 120%;
+        height: 120%;
+        transform: rotate(-10deg);
+        z-index: 1;
+      }
+
+      h1 {
+        font-family: 'montserratregular', sans-serif;
+        font-weight: 400;
+        font-size:18px;
+        margin: 0;
+        position: relative;
+        z-index:2;
+      }
+    }
+
+    .register-box {
+      margin: -100px 21px 53px;
+      background:#FFF;
+      padding:60px 15px 25px;
+      box-shadow: 0 10px 15px rgba(1,1,1,.1);
+      position: relative;
+      z-index: 2;
+      border-radius: 0 0 8px 8px;
+
+      .login-icon {
+        width:112px;
+        height: 112px;
+        background:#FFF;
+        position: absolute;
+        left:50%;
+        top:-56px;
+        border-radius:56px;
+        margin-left:-56px;
+        box-shadow: 5px 5px 10px rgba(255, 24, 90, .1);
+        color:#80CBC4;
+        font-size:38px;
+        text-align:center;
+        line-height:112px;
+        z-index:2;
+
+        button {
+          position: absolute;
+          bottom:-10px;
+          right: -10px;
+          width: 44px;
+          height: 44px;
+          padding: 0;
+
+          .camera-icon {
+            background: url(../assets/images/camera-icon.png) no-repeat;
+            display: block;
+            width:22px;
+            height: 19px;
+            background-size:100% auto;
+            margin: 11px auto;
+          }
+        }
+      }
+
+      ion-item {
+        padding: 0;
+        font-size: 1em;
+
+        .item-inner {
+          padding: 0;
+          border: none;
+          display: block;
+          position: relative;
+          z-index: 1;
+        }
+
+        ion-badge {
+          position: absolute;
+          display: block;
+          top:50%;
+          margin:-12px 0 0 0;
+          background: none;
+          padding: 0;
+          border-radius: 0;
+
+          &[item-left] {
+            left: 15px;
+          }
+          &[item-right] {
+            right: 15px;
+          }
+        }
+
+        ion-input {
+          margin: 0;
+          outline: none;
+
+          .text-input {
+            padding-left: 55px;
+            padding-right: 50px;
+          }
+        }
+      }
+    }
+
+    .submit-btn {
+      position: absolute;
+      left: 30px;
+      right: 30px;
+      height: 45px;
+      bottom:-23px;
+
+      button {
+        width: 100%;
+        opacity: 1;
+      }
+    }
+    .register-link {
+      text-align:center;
+      margin:0 0 20px;
+      line-height: 14px;
+
+      .register-btn {
+        padding: 0;
+        margin: 0;
+        line-height: 1;
+        height: auto;
+        vertical-align: top;
+        margin:0 0 0 10px;
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+  }
+  .form-icon {
+    display: block;
+    margin:0 auto;
+    width: 23px;
+    height: 23px;
+    background: url(../assets/images/form-icons.png) no-repeat;
+    background-size: 23px auto;
+
+
+    &.phone-icon {
+      background-position: 0 0
+    }
+    &.lock-icon {
+      background-position: 0 -23px
+    }
+    &.eye-icon {
+      background-position: 0 -46px;
+    }
+    &.user-icon {
+      background-position: 0 -69px;
+    }
+    &.email-icon {
+      background-position: 0 -92px;
+    }
+  }
+
+}

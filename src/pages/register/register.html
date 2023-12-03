@@ -1,0 +1,59 @@
+<ion-content class="login-content">
+  <div class="register-top">
+    <h1>Register</h1>
+    <div class="bg"></div>
+  </div>
+  <div class="register-box">
+    <form (ngSubmit)="register()" #registerForm="ngForm">
+      <span class="login-icon">
+          <ion-icon name="md-person"></ion-icon>
+
+        <button ion-button round color="secondary">
+          <i class="camera-icon"></i>
+        </button>
+      </span>
+      <ion-label>Name</ion-label>
+      <ion-item>
+        <ion-badge item-left>
+          <i class="form-icon user-icon"></i>
+        </ion-badge>
+        <ion-input type="text"  name="name" required></ion-input>
+      </ion-item>
+
+      <ion-label>Email ID</ion-label>
+      <ion-item>
+        <ion-badge item-left>
+          <i class="form-icon email-icon"></i>
+        </ion-badge>
+        <ion-input type="email"  name="email" required></ion-input>
+      </ion-item>
+
+      <ion-label>Password</ion-label>
+      <ion-item>
+        <ion-badge item-left>
+          <i class="form-icon lock-icon"></i>
+        </ion-badge>
+        <ion-input type="password"  name="password"  required></ion-input>
+        <ion-badge item-right>
+          <i class="form-icon eye-icon"></i>
+        </ion-badge>
+      </ion-item>
+
+      <ion-label>Mobile Number</ion-label>
+      <ion-item>
+        <ion-badge item-left>
+          <i class="form-icon phone-icon"></i>
+        </ion-badge>
+        <ion-input type="tel"  name="phone"  required></ion-input>
+      </ion-item>
+
+      <div class="submit-btn">
+        <button ion-button class="button-gradient" round  type="submit" [disabled]="!registerForm.form.valid">Register</button>
+      </div>
+    </form>
+  </div>
+
+  <p class="register-link">
+    Already have an Account? <button ion-button class="register-btn" clear (click)="goToLogin()">Login Now</button>
+  </p>
+</ion-content>

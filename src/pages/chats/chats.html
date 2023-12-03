@@ -1,0 +1,33 @@
+<ion-header class="bar-gradient">
+    <ion-navbar color="gradient">
+      <button ion-button menuToggle left *ngIf="!menu_hidden">
+        <ion-icon name="menu"></ion-icon>
+      </button>   
+      <ion-title>Chat</ion-title>  
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <!-- <ion-item>
+      <ion-label stacked>Set Chatroom name</ion-label>
+      <ion-input type="text" [(ngModel)]="nickname" placeholder="Chatroom name"></ion-input>
+    </ion-item>
+    <button ion-button full (click)="openChat()" [disabled]="nickname === ''">Join Chat as {{ nickname }}</button> -->
+  <div [ngSwitch]="chat">
+    <ion-searchbar placeholder="Search" (ionInput)="searchValue($event);" ></ion-searchbar>
+    <ion-list>
+      <div *ngFor="let chat_user of chat_users">
+        <ion-item class="item-unread" *ngIf="chat_user.userID != this.appUserId" (click)="openChat(chat_user)">
+          <ion-thumbnail item-left>
+            <img src="{{chat_user.src}}" />
+            <em class="{{chat_user.online}}"></em>
+          </ion-thumbnail>
+          <ion-badge item-right>{{chat_user.unread}}</ion-badge>
+         <!-- <ion-badge item-right class="time">{{chat_user.time}}</ion-badge> -->
+  
+          <h1>{{chat_user.displayName}}</h1>
+        </ion-item>
+      </div>
+    </ion-list>
+  </div>
+</ion-content>

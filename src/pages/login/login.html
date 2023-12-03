@@ -1,0 +1,83 @@
+<ion-content class="login-content">
+  <div class="login-top">    
+    <div class="bg"></div>
+    <h6 >Chat App</h6>   
+    <!-- <div id="logo_line"></div> -->
+    <ion-row class="auth" id="tab" color="primary">
+      <ion-col (click)="signin_seg();" >
+        <span id="{{left_bottom}}">Sign In</span>       
+      </ion-col>
+      <ion-col  (click)="registerSeg();">
+        <span id="{{right_bottom}}">Register</span>   
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div class="login-box" *ngIf="auth_login == true">
+    <!-- <ion-item>
+      <ion-label>Username</ion-label>
+      <ion-input type="text" name="username" [(ngModel)]="singinCredentials.username" required></ion-input>
+    </ion-item> -->
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input type="email" name="email" [(ngModel)]="singinCredentials.email" required></ion-input>
+    </ion-item>
+
+      <div class="password-group">
+        <ion-item id='toggle-item'>
+          <ion-label>Password</ion-label>
+          <ion-input type="{{show_pw}}"  name="password" [(ngModel)]="singinCredentials.password" required></ion-input>
+        </ion-item>         
+        <ion-icon name="eye" item-right (click)="togglePasswordMode()" class="eye-icon"></ion-icon>
+      </div>
+
+      <button ion-button (click)='getUserModelFields();' class="forgot-btn" color="dark" clear>Forgot Password?</button>
+
+      <div class="submit-btn">
+        <button ion-button class="button-gradient" round (click)="login();">Sign In</button>
+      </div>
+  </div>
+  <div class="register-box" *ngIf="auth_login == false">
+    <ion-item>
+      <ion-label>Full Name</ion-label>
+      <ion-input type="text" name="username" [(ngModel)]="registerCredentials.username" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input type="email"  name="r_email" [(ngModel)]="registerCredentials.email" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="{{show_pw}}"  name="register_pw"  [(ngModel)]="registerCredentials.register_pw" required></ion-input>
+    </ion-item>   
+    <ion-icon name="eye" item-right (click)="togglePasswordMode()" id="pw_eye" class="eye-icon"></ion-icon>
+    <ion-item>
+        <ion-label>Password Confirm</ion-label>
+      <ion-input type="{{show}}"  name="pw_conform" [(ngModel)]="registerCredentials.pw_conform" required></ion-input>
+    </ion-item>  
+    <ion-icon name="eye" item-right (click)="togglePassword()" id="confirm_eye" class="eye-icon"></ion-icon>
+    <div class="submit-btn">
+      <button ion-button class="button-gradient" round  type="submit" (click)="register();">Register</button>
+    </div>
+  </div>
+  <ion-row class="or">
+    <ion-col width-45 >
+      <div class="line" id="left_line"></div>
+    </ion-col>
+    <ion-col width-10>
+      OR
+    </ion-col>
+    <ion-col width-45>
+      <div class="line" id="left_line"></div>
+    </ion-col>
+  </ion-row>
+  <div class="social_login">
+    <button ion-button class="button-gradient" id="google_login" (click)="googleLogin();" round>
+        <img class="image" id="google_icon" src={{this.google_icon}}><span>Sign in with Google</span>
+    </button>
+    <button ion-button class="button-gradient" id="facebook_login" (click)="facebookLogin();" round>
+        <img class="image" id="facebook_icon" src={{this.facebook_icon}}> 
+      <span>Sign in with Facebook</span></button>
+  </div>
+
+</ion-content>

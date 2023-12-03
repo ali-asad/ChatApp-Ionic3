@@ -1,0 +1,432 @@
+page-login {
+  .eye-icon {
+    position: absolute;
+    z-index: 999;
+    right: 35px;
+    cursor: pointer;
+    color: grey;
+    font-size: 25px;
+  }
+  .or{
+    width: 90%;  
+    text-align: center;
+    color: #36BBB5;
+    margin: 3% 5%;
+    .line{
+      background: #36BBB5;
+      height: 2px;
+      margin-top: 8px;
+    }
+  }
+  ion-col{
+    &[width-10] {
+      flex: 0 0 10%;
+      max-width: 10%;
+    }  
+    &[width-45] {
+      flex: 0 0 45%;
+      max-width: 45%;
+    }
+  }
+  #logo_icon{
+    height: 70px;
+    margin-top: 30px;
+    width: 90px;
+    z-index: 999;
+    position: relative;
+  }
+  #brand_name{
+    height: 45px;
+    width: 250px;
+    z-index: 999;
+    position: relative;
+  }
+
+  .password-group{
+    position: relative;
+    .eye-icon {
+      position: absolute;
+      right: 5px;
+      bottom: 20px;
+      cursor: pointer;
+      color: grey;
+      font-size: 25px;
+    }
+  }
+  .text-input-ios{
+    color: #36BBB5;
+  }
+  #facebook_icon{
+    height: 25px;
+    width: 25px;
+    margin: 10px;
+    margin-left: 18px;
+    border-radius: 3px;
+  }
+  #google_icon{
+    height: 38px;
+    width: 32px;
+    margin: 10px;
+    margin-left: 0px;
+  }
+  #logo_line{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    height: 1px;
+    background: white;
+    margin-top: 40px;
+  }
+  .login-content {
+    overflow-x: hidden;
+    .login-top {
+      color: #FFF;
+      height: 185px;
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      .bg {
+        background: linear-gradient(45deg, #36BBB5, 0%, #36BBB5 99%);
+        position: absolute;
+        right: -20px;
+        width: 120%;
+        height: 100%;
+        z-index: 1;
+      }    
+      .login-icon {
+        margin: 0% -10%;    
+        width: 20%;
+        height: 72px;
+        top: 25px;
+        background: #FFF;
+        position: absolute;      
+        bottom: auto;
+        border-radius: 56px;
+        -webkit-box-shadow: 5px 5px 10px rgba(255, 24, 90, 0.2);
+        box-shadow: 5px 5px 10px rgba(255, 24, 90, 0.2);
+        color: #80CBC4;
+        font-size: 38px;
+        line-height: 80px;
+        z-index: 2;      
+        .avatar-image {
+          width: 112px;
+          height:112px;
+          border-radius: 50%;
+        }
+      }
+      h1 {
+        font-size: 30px;
+        font-family: serif; 
+        font-weight: bold;
+        margin: 0;
+        position: relative;
+        z-index: 2;
+        top: 56%;
+        color: white;
+      } 
+    }
+    h6{       
+      position: absolute;
+      z-index: 2;
+      color: white !important;
+      font-family: Poppins;
+      margin: 25% 10%;
+      width: 80%;
+      font-size: 30px;
+    }    
+
+    #border_bottom{
+      border-bottom: 3px solid white; 
+    }
+    .auth{
+      width: 50%;
+      margin: 130px 25%;
+      height: 7.6rem;
+      font-size: 15px;
+      line-height: 6.5rem;
+      z-index: 2;
+      position: absolute;
+      text-transform: uppercase;
+    }
+
+    .social_login{
+      text-align: center;
+      #google_login{
+        height: 45px;
+        background: white;
+        color: black;
+        width: 60%;
+        font-size: 14px;
+        text-transform: none;
+        -webkit-box-shadow: 0px 1px 1px  grey;
+        box-shadow: 0px 1px 1px  grey;
+        border-radius: 0px;
+      }
+      #facebook_login{
+        height: 45px;
+        background: white;
+        color: black;
+        width: 60%;
+        font-size: 14px;
+        text-transform: none;
+        -webkit-box-shadow: 0px 1px 1px  grey;
+        box-shadow: 0px 1px 1px  grey;
+        border-radius: 0px;
+      }
+      span{
+        color: #2b2a2a;
+        font-family: Poppins;
+        font-size: 15px;
+      }
+    }
+  
+    .button-gradient{
+      text-transform: none;
+    }
+    .segment-ios .segment-button:first-of-type{ 
+      border-top-left-radius: 10px;  
+      border-bottom-left-radius: 10px;
+    }
+    .segment-ios .segment-button:last-of-type{ 
+      border-top-right-radius: 10px;  
+      border-bottom-right-radius: 10px;
+    }
+    .icon_auth{
+      padding: 3px;
+    }
+
+    .register-box {
+      .eye-icon {
+        position: absolute;
+        z-index: 999;
+        right: 35px;
+        cursor: pointer;
+        color: grey;
+        font-size: 25px;
+      }
+      #pw_eye{     
+        bottom: 107px;
+      }
+      #confirm_eye{
+        bottom: 53px;
+      }
+      .input-wrapper{ 
+        height: 55px !important;
+      }
+      margin: 0px 21px 40px;
+      background: #FFF;
+      padding: 10px 30px 35px;
+      position: relative;
+      z-index: 2;
+      border-radius: 0 0 8px 8px;     
+
+      .login-icon {
+        width: 112px;
+        height: 112px;
+        background:#FFF;
+        position: absolute;
+        left:50%;
+        top:-56px;
+        border-radius:56px;
+        margin-left:-56px;
+        box-shadow: 5px 5px 10px rgba(255, 24, 90, .1);
+        color:#80CBC4;
+        font-size:38px;
+        text-align:center;
+        line-height:112px;
+        z-index:2;
+
+        button {
+          position: absolute;
+          bottom:-10px;
+          right: -10px;
+          width: 44px;
+          height: 44px;
+          padding: 0;
+
+          .camera-icon {
+            background: url(../assets/images/camera-icon.png) no-repeat;
+            display: block;
+            width:22px;
+            height: 19px;
+            background-size:100% auto;
+            margin: 11px auto;
+          }
+        }
+      }
+      ion-item {
+        padding: 0;
+        font-size: 1em;
+        border-bottom: solid 1px rgba(56, 60, 63, .2);
+        .item-inner {
+          padding: 0;
+          border: none;
+          display: block;
+          position: relative;
+          z-index: 1;
+        }
+
+        ion-badge {
+          position: absolute;
+          display: block;
+          top:50%;
+          margin:-12px 0 0 0;
+          background: none;
+          padding: 0;
+          border-radius: 0;
+
+          &[item-left] {
+            left: 15px;
+          }
+          &[item-right] {
+            right: 15px;
+          }
+        }
+
+        ion-input {
+          margin: 0;
+          outline: none;
+
+          .text-input {         
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+
+    .input-wrapper{
+      height: 65px !important;
+    }
+    .item-input ion-label{
+      color: #36BBB5;
+      text-transform: none;
+      font-family: Poppins;
+    }
+
+    .login-box {
+      margin: 50px 21px 45px;
+      padding: 10px 30px 35px;
+      position: relative;
+      z-index: 1;
+      border-radius: 8px;
+
+      ion-item {
+        padding: 0;
+        font-size: 1em;
+        border-bottom: solid 1px rgba(56, 60, 63, .2);
+
+        .item-inner {
+          padding: 0;
+          border: none;
+          display: block;
+          position: relative;
+          z-index: 1;
+        }
+
+        ion-badge {
+          position: absolute;
+          display: block;
+          top:50%;
+          margin:-12px 0 0 0;
+          background: none;
+          padding: 0;
+          border-radius: 0;
+
+          &[item-left] {
+            left: 15px;
+          }
+          &[item-right] {
+            right: 15px;
+          }
+        }
+
+        ion-input {
+          margin: 0;
+          outline: none;
+
+          .text-input {
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+
+    .submit-btn {
+      position: absolute;
+      left: 100px;
+      right: 100px;
+      height: 30px;
+      bottom: -23px;
+
+      button {
+        border-radius: 0px;
+        width: 100%;
+        opacity: 1;
+        height: 35px;
+        text-transform: uppercase;
+        background: #36BBB5 !important;
+      }
+    }
+
+    .register-link {
+      text-align:center;
+      margin:0 0 20px;
+      line-height: 14px;
+
+      .register-btn {
+        padding: 0;
+        margin: 0 0 0 10px;
+        line-height: 1;
+        height: auto;
+        vertical-align: top;
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+  }
+
+  .forgot-btn {
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: block;
+    text-align: right;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    span {
+      text-align:right;
+      display: block;
+      font-size: 13px;
+      height: 15px;
+    }
+  }
+
+  .form-icon {
+    display: block;
+    margin:0 auto;
+    width: 23px;
+    height: 23px;
+    background: url(../assets/images/form-icons.png) no-repeat;
+    background-size: 23px auto;
+
+
+    &.phone-icon {
+      background-position: 0 0
+    }
+    &.lock-icon {
+      background-position: 0 -23px
+    }
+    &.eye-icon {
+      background-position: 0 -46px;
+    }
+    &.user-icon {
+      background-position: 0 -69px;
+    }
+    &.email-icon {
+      background-position: 0 -92px;
+    }
+  }
+
+
+}

@@ -1,0 +1,44 @@
+
+<ion-header class="bar-gradient">
+  <ion-navbar color="gradient">
+    <ion-title>Setting</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list class="chat-list">
+        <ion-list-header>
+          Profile
+        </ion-list-header>
+        <button ion-item (click)="userProfilePhoto()">
+            <ion-thumbnail item-start>               
+                <img *ngIf="img_url" [src]="this.img_url">
+              </ion-thumbnail>
+            <ion-label>Photo</ion-label> 
+        </button>    
+        <button ion-item (click)="updateUserName()">
+            <ion-label>
+                <ion-icon class="circle" name="contact"></ion-icon>
+                <span>Name</span> 
+            </ion-label>        
+        </button>          
+        <button ion-item (click)="updateEmail()">
+            <ion-label width-25>
+              <ion-icon class="circle" name="mail"></ion-icon>
+              <span>Email</span>
+            </ion-label>            
+        </button>
+        <button ion-item (click)="updatePassword()">
+            <ion-label>
+              <ion-icon class="circle" name="lock"></ion-icon>
+              <span>Password</span>
+            </ion-label>           
+        </button>
+        <button ion-item >
+            <ion-label>
+              <ion-icon class="circle" name="pin"></ion-icon>
+              <span>Location</span>
+            </ion-label>
+        </button>   
+    </ion-list>
+</ion-content>

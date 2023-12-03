@@ -1,0 +1,27 @@
+<ion-header class="bar-gradient">
+  <ion-navbar color="gradient">
+    <div>
+      <button *ngIf="menu_hidden == false" ion-button menuToggle left>
+        <ion-icon name="menu"></ion-icon>
+      </button>   
+      <ion-title>My Account</ion-title>
+      <i class="fa fa-cog" right (click)="goSetting();"></i>   
+    </div>
+  </ion-navbar>
+
+  <div class="profile-top">
+    <!-- <button ion-button clear class="edit-profile-btn" (click)="editProfile();">
+        <ion-icon name="ios-create-outline"></ion-icon>
+    </button>    -->
+    <div class="bg"></div>
+    <span class="user-tn">
+      <img src="assets/images/profile-img.jpg" />
+    </span>
+    <h2>{{username}}</h2>
+    <h3>{{email}}</h3>
+  </div>  
+</ion-header>
+
+<ion-content padding>
+
+</ion-content>

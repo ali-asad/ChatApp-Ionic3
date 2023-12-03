@@ -1,0 +1,10 @@
+<ion-header class="bar-gradient">
+    <ion-navbar color="gradient">
+      <ion-title>User Email</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding>    
+  <ion-input type="email" name="email" [(ngModel)]="this.email" required></ion-input>
+  <button ion-button (click)='changeEmail()' class="btn">Save</button>
+</ion-content>
