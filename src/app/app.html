@@ -1,0 +1,36 @@
+<ion-menu swipeEnabled="false" type="overlay" persistent="true" [content]="content" side="left" id="menu1" (ionOpen) ="profile();">
+    <ion-header>
+        <ion-toolbar id="menu-header">
+            <ion-title>Menu</ion-title>
+        </ion-toolbar>
+    </ion-header>      
+    <ion-content>
+        <div class="avatar">
+        <ion-icon class="profile_photo" name="contact"  aria-hidden="true" [hidden]="this.avatar">         
+        </ion-icon>     
+        <img [src]="this.avatar" *ngIf="this.avatar" class="avatar-image">    
+        </div>
+        <ion-list class="setting">
+            <ion-item-group>
+                <ion-item-divider color="light">NAVIGATION</ion-item-divider>
+              
+                <button  ion-item class="setting-button"  (click)="openPage('comments')">
+                    <i class="fa fa-comments" right></i>                                   
+                    Chat
+                </button> 
+                <button  ion-item class="setting-button"  (click)="openPage('account')">
+                    <i class="fa fa-user-circle" right></i>                                   
+                    Account
+                </button>  
+               
+            </ion-item-group>
+            <ion-item-group>      
+                <button ion-item class="setting-button"  (click)="openPage('Logout')">
+                    <i class="fa fa-sign-out"></i>                    
+                    Log out
+                </button>    
+            </ion-item-group>                
+        </ion-list>
+    </ion-content>      
+</ion-menu>
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

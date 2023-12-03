@@ -1,0 +1,327 @@
+#menu-header{
+  .toolbar-background-ios {
+    background: #36BBB5;
+  }
+}
+#menu2{
+  margin-top: 50px;
+  .toolbar-title-ios{
+    color: rgb(71, 71, 71);
+  }
+  .toolbar-background-ios{
+    background: rgb(185, 184, 184);
+  }
+  #close{
+    font-size: 40px;
+    color: black;
+  }
+  ion-segment{
+    width: 86%;
+    margin: 0% 7%;
+  }
+  .filter-segment{
+    border-color:  rgb(151, 150, 150);
+    color:   rgb(151, 150, 150);   
+  }
+  .segment-ios .segment-button.segment-activated{
+    background-color:   rgb(151, 150, 150);
+    color: #fff;
+  }
+}
+.toggle-ios .toggle-inner{
+  top: -3px;
+  width: 22px;
+  height: 22px;
+}
+.toggle-ios.toggle-checked .toggle-inner{
+  background: #1d988b;
+}
+.toggle-ios{
+  height: 16px;
+  width: 42px;
+}
+.list-ios {
+  margin: 40px 0 32px;
+}
+#result{
+  background:   rgb(185, 184, 184);
+}
+@font-face {
+  font-family: 'montserratbold';
+  src: url('../assets/fonts/montserrat-bold-webfont.woff2') format('woff2'),
+       url('../assets/fonts/montserrat-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratregular';
+  src: url('../assets/fonts/montserrat-regular-webfont.woff2') format('woff2'),
+  url('../assets/fonts/montserrat-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrat-light';
+  src: url('../assets/fonts/montserrat-light-webfont.woff2') format('woff2'),
+  url('../assets/fonts/montserrat-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'montserratregular', sans-serif;
+}
+
+.has-icon .tab-badge {
+  right: calc(50% - 20px);
+}
+
+.tabs-ios .tab-button-icon{
+  color: rgb(36, 35, 35);
+}
+
+.toolbar-title-ios, .toolbar-title-md{
+  color: white;
+}
+
+.avatar {
+  margin: 0px;       
+  text-align: center;
+  height: 120px;
+  font-size: 100px;
+  ion-icon{
+    color: tomato;
+  }
+  .avatar-image {   
+    border-radius: 50%;
+  }
+}
+
+.content {
+  background: white;
+}
+
+.button-gradient {
+  background-color: #1e5799;
+  background: -webkit-linear-gradient(45deg, #80CBC4 0%,#80CBC4 100%);
+  background: linear-gradient(45deg, #80CBC4 0%,#80CBC4 100%);
+  text-transform: uppercase;
+
+  &.fab {
+    box-shadow: 5px 5px 10px rgba(255, 24, 90, .2);
+  }
+}
+
+ion-label {
+  // color: #80CBC4;
+  font-family: 'montserratregular';
+  font-size:12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin:0 0 10px 5px;
+}
+
+ion-input {
+  margin-bottom: 22px;
+  border-radius:5px;
+}
+.tabs-ios .tabbar,
+.tabbar {
+  background:#FFF;
+  box-shadow: 0 0 20px rgba(0,0,0,.2);
+  border: none;
+}
+.tabs-ios ,
+.tabbar  {
+  .tab-button {
+    text-transform: uppercase;
+    color:#727272;
+    font-size:10px;
+
+    ion-icon {
+      display: block;
+      width: 24px;
+      height: 24px;
+      min-width: 24px;
+      margin: 0 auto 5px;
+      background-size: 48px auto;
+
+      &[ng-reflect-name="discover"] {
+        background-position: 0 0;
+      }
+      &[ng-reflect-name="chats"] {
+        background-position: 0 -24px;
+      }
+      &[ng-reflect-name="ads"] {
+        background-position: 0 -48px;
+      }
+      &[ng-reflect-name="profile"] {
+        background-position: 0 -72px;
+      }
+    }
+    &[aria-selected=true] {
+      ion-icon {
+        &[ng-reflect-name="discover"] {
+          background-position: -24px 0;
+        }
+        &[ng-reflect-name="chats"] {
+          background-position: -24px -24px;
+        }
+        &[ng-reflect-name="ads"] {
+          background-position: -24px -48px;
+        }
+        &[ng-reflect-name="profile"] {
+          background-position: -24px -72px;
+        }
+      }
+    }
+  }
+
+}
+
+.toolbar-ios-gradient,
+.toolbar-md-gradient {
+  color:#FFF;
+}
+
+.toolbar-ios-gradient .toolbar-background-ios,
+.toolbar-md-gradient .toolbar-background-md{
+  background-color: #1e5799;
+  background: -webkit-linear-gradient(45deg, #80CBC4 0%, #80CBC4 100%);
+  background: linear-gradient(45deg, #80CBC4 0%, #80CBC4 100%);
+  border: none;
+}
+
+ion-header {
+  box-shadow: 0 5px 15px rgba(255,34,90,.3);
+  &.bar-gradient {
+    background-color: white;
+    color: #36BBB5;
+    > ion-title {
+      margin: 10px 0;
+    }
+  }
+}
+
+.setting{
+  ion-label{
+    text-transform: none;
+    color: #585858;
+    font-size: 13px;
+  }
+  .item-ios-light, .item-divider-ios-light{
+    background: #cccccc;
+    height: 10px;
+   
+  }
+}
+
+// .toolbar-background-ios, .toolbar-background-md{
+//   background: #36BBB5;
+// }
+
+.header-icon {
+   display: block;
+   width: 20px;
+   height: 20px;
+   margin: 0 auto;
+   background: url(../assets/images/header-icons.png) no-repeat;
+   background-size: 20px auto;
+
+  &.filter-icon {
+    background-position: 0 0;
+  }
+  &.search-icon {
+     background-position: 0 -20px;
+  }
+  &.fav-empty-icon {
+    background-position: 0 -60px;
+  }
+  &.share-icon {
+    background-position: 0 -80px;
+  }
+  &.star-icon {
+    background-position: 0 -100px;
+  }
+ }
+
+ion-buttons {
+  .bar-button {
+    margin:0 5px;
+  }
+}
+
+ion-footer{
+  .toolbar-background {
+    background: #f7f7f7;
+    border-top-color: #ebebeb !important;
+  }
+  .toolbar-content {
+    padding: 16px;
+  }
+  .button-full {
+    width: 65%;
+    height: 45px;
+    font-size:14px;
+    font-weight: 400;
+    margin:0 auto;
+    box-shadow: 0px 5px 15px rgba(255, 24, 90, .3);
+  }
+}
+
+.back-button {
+  .button-inner {
+    display: block;
+    background: url(../assets/images/header-icons.png)  0 -40px no-repeat;
+    background-size: 20px auto;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+
+    * {
+      display: none !important;
+    }
+  }
+}
+
+.searchbar-ios.searchbar-left-aligned .searchbar-search-icon{
+  top: 12px;
+}
+.searchbar  {
+  background: none;
+  border: none;
+  padding: 0 20px 10px;
+
+  .searchbar-input-container {
+    position:relative;
+    background:#eeeeee;
+    height: 36px;
+    padding: 6px;
+    border-radius:5px;
+
+    .searchbar-input {
+      height: 23px;
+      width: 100%;
+      color:black;
+      padding: 5 10px;
+      border-radius:3px;
+      font-size:12px;
+      font-family: 'montserrat-light';
+    }
+  }
+}
+
+.amount{
+  color: gray;
+  right: 50px;
+  position: absolute;
+}
+
+.scroll {
+    height: 100%;
+}
+
+.auto-scroll .scroll-content {
+	overflow-y:auto !important;
+}
