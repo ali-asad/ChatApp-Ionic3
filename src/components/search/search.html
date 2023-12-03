@@ -1,0 +1,23 @@
+<ion-header class="componet-header" id="{{content_id}}">
+  <ion-navbar color="componet-nav">
+    <ion-title>{{this.title}}</ion-title>
+    <ion-buttons class="reset" end>
+      <button ion-button icon-only (click)="reset()">
+      </button>  
+      Reset
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="{{content_id}}">
+    <ion-searchbar placeholder="Search" (ionInput)="searchValue($event);" ></ion-searchbar>
+    <ion-scroll id='msgScroll' scrollY="true">
+      <div class="item-select">
+        <ion-item *ngFor="let skill of this.skills; let i = index" (click)="itemCheck(skill);">
+          {{skill.name}}
+          <i class="fa fa-check" item-right id="check-icon" *ngIf="skill.isChecked"></i>
+        </ion-item> 
+      </div>
+    </ion-scroll>
+    <button class="component-bt" ion-button icon-only (click)="cancel()" left>CANCEL</button>  
+    <button class="component-bt" ion-button icon-only (click)="apply()" right>APPLY</button>  
+</ion-content>

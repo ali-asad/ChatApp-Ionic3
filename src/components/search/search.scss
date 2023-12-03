@@ -1,0 +1,53 @@
+search {    
+    #msgScroll{
+        .scroll-content{
+            height: 400px;
+            padding: 5px !important;
+        }
+    }
+    #modal-content{
+        margin-top: 100px;
+    }  
+    .item-select{
+        .item-ios {
+            padding-left: 30px;
+        }
+        .item-ios:hover {
+            background: #e6e6e6;
+        }
+    }
+    .reset{
+        color:white;
+        margin-right: 15px;
+    }
+    .item-select .item-ios{
+        padding-left: 0px;
+    }
+    .bar-buttons-ios[end]{
+        margin-top: 5px;
+    }
+    #check-icon{
+     color: #36BBB5;
+    }
+    .toolbar-title-ios, .toolbar-title-md{
+        color: black;
+    }    
+    .component-bt{
+        width: 48%;
+        margin-top: 410px;
+        bottom: 0px;
+        height: 30px;
+    }
+    .toolbar-background-ios{
+        background: #36BBB5;
+    }
+}
+
+ion-modal {
+    ion-backdrop {
+        visibility: visible !important;
+        z-index:0;
+        opacity: 0.6 !important;
+    }
+}
+

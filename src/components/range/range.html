@@ -1,0 +1,17 @@
+<ion-header class="componet-header">
+  <ion-navbar color="componet-nav">
+    <ion-title>{{this.title}}</ion-title>
+    <ion-buttons class="reset" end>
+      <button ion-button icon-only (click)="reset()">
+      </button>  
+      Reset
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="modal-content">
+    <ion-item>
+      <ion-range min="0" max="500" step="50" snaps="true"  [(ngModel)]="range" (ionChange)="changeRange(range)"></ion-range>    
+    </ion-item>
+  <button class="component-bt" ion-button icon-only (click)="cancel()" left>CANCEL</button>  
+  <button class="component-bt" ion-button icon-only (click)="apply()" right>APPLY</button>  
+</ion-content>

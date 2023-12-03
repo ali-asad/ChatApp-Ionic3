@@ -1,0 +1,118 @@
+range {
+  ion-header{
+    margin-top: 500px;
+  } 
+  #modal-content{
+    margin-top: 500px;
+  }
+  .reset{
+      color: #36BBB5;
+  }
+  .toolbar-title-ios, .toolbar-title-md{
+      color: black;
+  }
+  .bar-buttons-ios[end]{
+      margin-top: 5px;
+  }
+  .component-bt{
+      width: 48%;
+      margin-top: 20px;
+      bottom: 0px;
+      height: 30px;
+  }
+  .item-ios.item-block .item-inner{
+      border-bottom: 0px;
+  }
+
+   .item-range ion-range {
+    padding: 0 5px;
+    margin-top: -10px;
+
+    .range-slider {
+      height: 54px
+    }
+    .range-bar {
+      height: 4px;
+      background: #ebebeb;
+
+      &.range-bar-active {
+        background:#21c055;
+      }
+    }
+    .range-tick {
+      background: none;
+      &:after {
+        display:block;
+        margin-top: 20px;
+        font-size:14px;
+        width: 30px;
+        text-align:center;
+        margin-left:-15px;
+      }
+      &:first-child {
+        &:after {
+          content: '$0'
+        }
+
+        + .range-tick {
+          &:after {
+            // content: '50'
+          }
+          + .range-tick {
+            &:after {
+            //   content: '100'
+            }
+            + .range-tick {
+              &:after {
+                // content: '150'
+              }
+              + .range-tick {
+                &:after {
+                //   content: '200'
+                }
+                + .range-tick {
+                  + .range-tick {
+                    &:after {
+                    //   content: '300'
+                    }
+                    + .range-tick {
+                      + .range-tick {
+                        + .range-tick {
+                          + .range-tick {
+                            &:after {
+                              content: '$50'
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .range-knob-handle {
+      width: 22px;
+      height: 22px;
+      background:#a6e6bb;
+      box-shadow: none;
+      border-radius: 11px;
+      margin-top:-11px;
+      margin-left:-11px;
+
+      .range-knob {
+        width: 16px;
+        height: 16px;
+        border-radius: 8px;
+        top: 3px;
+        left: 3px;
+        background:#FFF;
+        border: solid 3px #21c055;
+      }
+    }
+  }
+}
